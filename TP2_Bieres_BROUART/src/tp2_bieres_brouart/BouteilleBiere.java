@@ -13,18 +13,27 @@ public class BouteilleBiere {
    double degreAlcool;
    String brasserie;
    boolean ouverte;
-   if 
+   
    public void lireEtiquette() {
 System.out.println("Bouteille de " + nom +" (" + degreAlcool +
- " degres) \nBrasserie : " + brasserie ) ;
+ " degres) \nBrasserie : " + brasserie +"\n ouverte? :" + ouverte) ;
 
 }
     public BouteilleBiere(String unNom, double unDegre, String
-uneBrasserie) {
+uneBrasserie, boolean ouverte1) {
  nom = unNom;
  degreAlcool = unDegre;
  brasserie = uneBrasserie;
- ouverte = false;
+ ouverte = ouverte1;
     }
+    public boolean Decapsuler() {
+        if (ouverte == false) {
+            ouverte = true;
+            return true;
+                    }else{
+            System.out.println("La biere est deja ouverte"); 
+            return false;
+        }
+}
 }
 
