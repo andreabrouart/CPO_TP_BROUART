@@ -15,6 +15,16 @@ public class TP2_Bieres_BROUART {
      */
     public static void main(String[] args) {
      BouteilleBiere uneBiere = new BouteilleBiere() ;
-    }
-    
+     uneBiere.nom = "Cuvee des trolls";
+     uneBiere.degreAlcool = 7.0 ;
+     uneBiere.brasserie = "Dubuisson";
+     uneBiere.ouverte = false;
+     uneBiere.lireEtiquette(); 
+     
+     BouteilleBiere Biere2 = new BouteilleBiere() ;
+     Biere2.nom = "Leffe";
+     Biere2.degreAlcool = 6.6 ;
+     Biere2.brasserie = "Abbaye de Leffe";
+     Biere2.lireEtiquette();
+}
 }
