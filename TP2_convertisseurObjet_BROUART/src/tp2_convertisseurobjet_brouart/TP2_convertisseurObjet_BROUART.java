@@ -40,31 +40,40 @@ public class TP2_convertisseurObjet_BROUART {
        double t = sc.nextDouble();
        Convertisseur conv = new Convertisseur();
        double resultat;
+       int nbConversions = 0;
        if (conversion_mode ==1){
            resultat = conv.CelciusVersKelvin(t);
            System.out.println(t+ "degres Celsius est égal à "+ resultat+ "degres Kelvin");   
-    }
+   nbConversions = nbConversions +1;
+       }
        
        if (conversion_mode ==2){
            resultat = conv.KelvinVersCelcius(t);
            System.out.println(t+ "degres Kelvin est égal à "+ resultat+ "degres Celcius");
-    }
+    nbConversions = nbConversions +1;
+       }
        if (conversion_mode ==3){
            resultat = conv.FarenheitVersCelcius(t);
            System.out.println(t+ "degres Farenheit est égal à "+ resultat+ "degres Celcius");
-    }
+    nbConversions = nbConversions +1;
+       }
     if (conversion_mode ==4){
            resultat = conv.CelciusVersFarenheit(t);
            System.out.println(t+ "degres Celsius est égal à "+ resultat+ "degres Farenheit");   
+   nbConversions = nbConversions +1;
     }
     if (conversion_mode ==5){
            resultat = conv.KelvinVersFarenheit(t);
            System.out.println(t+ "degres Kelvin est égal à "+ resultat+ "degres Farenheit");
+   nbConversions = nbConversions +1;
     }
     if (conversion_mode ==6){
            resultat = conv.FarenheitVersKelvin(t);
            System.out.println(t+ "degres Farenheit est égal à "+ resultat+ "degres Kelvin");
+           nbConversions = nbConversions +1;
     }
+    System.out.println("le nbr de conversions est: "+nbConversions);
+            
     }
 }
 
