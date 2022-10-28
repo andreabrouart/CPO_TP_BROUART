@@ -21,14 +21,51 @@ public class TP2_convertisseurObjet_BROUART {
         b = sc.nextDouble();
         System.out.println(b+"  degre C");
         b = b + 273.15;
-        System.out.println("convertion "+b+" ° degre K");
+        System.out.println("conversion "+b+" ° degre K");
         
         //méthode d'appel des fonctions
-       System.out.println("Saisissez une valeur pour la vraie convertion");
+        System.out.println("Selectionnez la conversion voulue : \n"
+                + "1 -> Celcius Vers Kelvin\n"
+                + "2 -> Kelvin Vers Celcius\n"
+                + "3 -> Farenheit Vers Celcius\n"
+                + "4 -> Celcius Vers Farenheit\n"
+                + "5 -> Kelvin Vers Farenheit\n"
+                + "6 -> Farenheit Vers Kelvin\n");
+        int conversion_mode = sc.nextInt();
+       if (conversion_mode<1 || conversion_mode>6){
+            System.out.println("la valeur entree est incorrecte");
+            System.exit(0);
+       }
+       System.out.println("Saisissez une valeur pour la vraie conversion");
        double t = sc.nextDouble();
-       Convertisseur c = new Convertisseur(); 
-       double p = c.FarenheitVersKelvin(t); 
-       System.out.println(p);
+       Convertisseur conv = new Convertisseur();
+       double resultat;
+       if (conversion_mode ==1){
+           resultat = conv.CelciusVersKelvin(t);
+           System.out.println(t+ "degres Celsius est égal à "+ resultat+ "degres Kelvin");   
     }
-    
+       
+       if (conversion_mode ==2){
+           resultat = conv.KelvinVersCelcius(t);
+           System.out.println(t+ "degres Kelvin est égal à "+ resultat+ "degres Celcius");
+    }
+       if (conversion_mode ==3){
+           resultat = conv.FarenheitVersCelcius(t);
+           System.out.println(t+ "degres Farenheit est égal à "+ resultat+ "degres Celcius");
+    }
+    if (conversion_mode ==4){
+           resultat = conv.CelciusVersFarenheit(t);
+           System.out.println(t+ "degres Celsius est égal à "+ resultat+ "degres Farenheit");   
+    }
+    if (conversion_mode ==5){
+           resultat = conv.KelvinVersFarenheit(t);
+           System.out.println(t+ "degres Kelvin est égal à "+ resultat+ "degres Farenheit");
+    }
+    if (conversion_mode ==6){
+           resultat = conv.FarenheitVersKelvin(t);
+           System.out.println(t+ "degres Farenheit est égal à "+ resultat+ "degres Kelvin");
+    }
+    }
 }
+
+ 
