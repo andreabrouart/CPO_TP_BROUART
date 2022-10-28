@@ -6,7 +6,11 @@ package tp2_convertisseurobjet_brouart;
  * @author Asus
  */
 public class Convertisseur {
-    
+ 
+public Convertisseur () {
+     int nbConversions;
+     nbConversions = 0 ;   
+}
 
 
  public double CelciusVersKelvin(double celcius){ 
@@ -24,13 +28,13 @@ public class Convertisseur {
       return Celcius;
   }
   
-   public double CelsiusVersFarenheit(double celcius){
+   public double CelciusVersFarenheit(double celcius){
        double Farenheit = (celcius*1.8)+32;
        return Farenheit;
    }
    
     public double KelvinVersFarenheit(double kelvin){
-        double Farenheit = CelsiusVersFarenheit(KelvinVersCelcius(kelvin));
+        double Farenheit = CelciusVersFarenheit(KelvinVersCelcius(kelvin));
         return Farenheit;
     }
     
@@ -38,4 +42,5 @@ public class Convertisseur {
         double Kelvin = CelciusVersKelvin(FarenheitVersCelcius(farenheit));
         return Kelvin;
      }
-    }
+}
+
