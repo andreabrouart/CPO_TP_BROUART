@@ -29,8 +29,11 @@ public class TP2_Bieres_BROUART {
      
      BouteilleBiere Biere4 = new BouteilleBiere("Chouffe",8.0,"Chez Margaux",false);
      Biere4.lireEtiquette();
+     Biere4.Decapsuler();
+     Biere4.lireEtiquette();
      
      BouteilleBiere Biere5 = new BouteilleBiere("Heineken",5.2,"Babar",true);
      Biere5.lireEtiquette();
+     Biere5.Decapsuler();
 }
 }
