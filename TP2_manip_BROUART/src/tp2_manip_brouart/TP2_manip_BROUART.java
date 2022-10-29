@@ -21,7 +21,7 @@ public class TP2_manip_BROUART {
     assiette3.nbCalories) ;
     //print montre bien que c'est la même tartiflette à 600 cal
     
-    //changement des valeurs de assiette1 et assiette2
+    //5.changement des valeurs de assiette1 et assiette2
     int echange;
     echange = assiette1.nbCalories;
     assiette1.nbCalories=assiette2.nbCalories;
@@ -30,6 +30,15 @@ public class TP2_manip_BROUART {
     assiette1.nbCalories) ;
     System.out.println("nb de calories de Assiette 2 : " +
     assiette2.nbCalories) ;
+    
+    //6.Moussaka assiette666 = assiette1 ;
+    //Moussaka assiette667 = new Tartiflette() ;
+    //incorrect, la classe moussaka ne peut être convertie en tartiflette. Une référence objet ne peut en référencer un autre
+    
+    Moussaka[] tabmoussaka = new Moussaka[10];
+    for (int i = 0; i<10; i++){
+        tabmoussaka[i] = new Moussaka(400);
+    }
+    }
     }
     
-}
