@@ -40,5 +40,6 @@ public boolean ajouter_voiture( Voiture voiture_a_ajouter) {
                 return true;
                 // on indique à la voiture son propriétaire 
                 }
-            }
+      }
+}
 }
