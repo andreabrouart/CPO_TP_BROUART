@@ -7,4 +7,8 @@ package tp3_brouart;
  */
 public class Baton extends Arme{
 int age;    
+
+    public Baton(String n, int atk) {
+        super(n, atk);
+    }
 }

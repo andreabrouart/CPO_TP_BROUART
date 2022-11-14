@@ -11,5 +11,9 @@ package tp3_brouart;
 public class Epee extends Arme{
 int indice;
 
+    public Epee(String n, int atk) {
+        super(n, atk);
+    }
+
 }
 
