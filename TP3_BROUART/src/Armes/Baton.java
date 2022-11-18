@@ -1,5 +1,5 @@
 /*BROUART Andréa TDB*/
-package tp3_brouart;
+package Armes;
 
 /**
  *

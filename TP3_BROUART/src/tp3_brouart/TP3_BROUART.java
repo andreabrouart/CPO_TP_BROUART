@@ -1,6 +1,8 @@
 /*BROUART Andréa TDB*/
 package tp3_brouart;
 
+import Armes.Baton;
+import Armes.Epee;
 import java.util.ArrayList;
 
 /**
@@ -18,12 +20,16 @@ public class TP3_BROUART {
      Baton Chene = new Baton("Chene",4,5);
      Baton Charme = new Baton("Charme",5,6);
      
-     int m;
+     
      ArrayList tableau = new ArrayList();
      tableau.add(Excalibur);
      tableau.add(Durandal);
      tableau.add(Chene);
      tableau.add(Charme);
+     
+     //for (int i =0; i<tableau.size();i++){
+     //    System.out.println(tableau.elementAt(i));
+     }
     }
    
-}
+
