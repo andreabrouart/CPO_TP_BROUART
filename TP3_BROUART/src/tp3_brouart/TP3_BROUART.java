@@ -3,7 +3,7 @@ package tp3_brouart;
 
 import Armes.Baton;
 import Armes.Epee;
-import java.util.ArrayList;
+import java.util.Vector;
 
 /**
  *
@@ -21,15 +21,16 @@ public class TP3_BROUART {
      Baton Charme = new Baton("Charme",5,6);
      
      
-     ArrayList tableau = new ArrayList();
+     Vector tableau = new Vector();
      tableau.add(Excalibur);
      tableau.add(Durandal);
      tableau.add(Chene);
      tableau.add(Charme);
      
-     //for (int i =0; i<tableau.size();i++){
-     //    System.out.println(tableau.elementAt(i));
+     for (int i =0; i<tableau.size();i++){
+       System.out.println(tableau.elementAt(i));
      }
     }
+}
    
 

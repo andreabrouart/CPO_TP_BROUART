@@ -10,4 +10,5 @@ package tp3_brouart;
  */
 public class Guerrier {
     
+    
 }
