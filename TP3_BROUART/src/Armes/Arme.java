@@ -21,4 +21,8 @@ if (atk >100){
     atk = 100;
 }
 }
+
+    public String getNom() {
+        return nom;
+    }
 }

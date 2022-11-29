@@ -41,11 +41,11 @@ public abstract class Personnages {
     public void choisir_arme(Arme arme){
         if (liste_armes.contains(arme)){
             Arme_en_Main = arme;
-            System.out.println("L'arme en main est : "+Arme_en_Main.get_nom());
+            System.out.println("L'arme en main est : "+Arme_en_Main.getNom());
         }
     }
 
-    public String get_nom() {
+    public String getNom() {
         return Nom;
     }
 

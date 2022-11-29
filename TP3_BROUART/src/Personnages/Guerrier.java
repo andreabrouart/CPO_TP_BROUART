@@ -10,11 +10,15 @@ package Personnages;
  */
 public class Guerrier extends Personnages{
     boolean Acheval;
-    
-    public Guerrier(String nom, int nivvie, boolean acheval){
-        Acheval = acheval;
-         
+
+    public Guerrier(String nom, int nivvie,boolean Acheval) {
+        super(nom, nivvie);
+        this.Acheval = Acheval;
     }
+    
+    
+         
+    
     public void setter_acheval(boolean acheval){
         Acheval = acheval;
     }

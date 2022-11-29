@@ -10,10 +10,13 @@ package Personnages;
  */
 public class Magicien extends Personnages{
     boolean Confirme;
-    
-    public Magicien(String nom, int nivvie, boolean confirme){
-        Confirme = confirme;
+
+    public Magicien(String nom, int nivvie, boolean Confirme) {
+        super(nom, nivvie);
+        this.Confirme = Confirme;
     }
+    
+    
     public void setter_confirme(boolean confirme){
         Confirme = confirme;
     }
