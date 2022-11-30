@@ -28,7 +28,11 @@ public abstract class Personnages {
 
     @Override
     public String toString() {
-        return "Personnages{" + "Nom= " + Nom + ", Niveau de vie = " + Nivvie + '}';
+        String text = "Personnage{" + "Nom= " + Nom + ", Niveau de vie = " + Nivvie + '}';
+        if (Arme_en_Main != null){
+          text = text + "l'arme en main est : "+Arme_en_Main.toString();
+        }
+        return text;
     }
     
     public void ajouter_arme(Arme arme){

@@ -47,6 +47,26 @@ public class TP3_BROUART {
      for (int i =0; i<tableau2.size();i++){
        System.out.println(tableau2.elementAt(i));
      }
+     
+     Magicien Copperfield = new Magicien("Copperfield",62, true);
+     Guerrier Attila = new Guerrier("Attila",75,true);
+     Baton Olivier = new Baton("Olivier",5,5);
+     Baton Bouleau = new Baton("Bouleau",4,7);
+     Baton If = new Baton("If",6,4);
+     Epee Curtana = new Epee("Curtana",7,7);
+     Epee Balisarde = new Epee("Balisarde",6,6);
+     Epee Baptism = new Epee("Baptism",5,7);
+     
+     Attila.ajouter_arme(Curtana);
+     Attila.ajouter_arme(Balisarde);
+     Attila.ajouter_arme(Olivier);
+     Attila.choisir_arme(Curtana);
+     Copperfield.ajouter_arme(Bouleau);
+     Copperfield.ajouter_arme(If);
+     Copperfield.ajouter_arme(Baptism);
+    //System.out.println("Le nbr d'armes préférées de "+Copperfield.getNom()+" sont : "+Copperfield.);
+     System.out.println(Copperfield.toString());
+     System.out.println(Attila.toString());
      }
      
     }
