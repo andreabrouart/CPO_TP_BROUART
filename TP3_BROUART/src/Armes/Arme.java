@@ -12,7 +12,7 @@ public class Arme {
     @Override
 public String toString(){
     return "Nom de l'arme : "+nom+"\nNiveau d'attaque : "+Niv_attak;
-    
+ // visualiser le nom et le niveau d'attaque de l'arme   
 }
 public Arme(String n, int atk){
 nom = n;

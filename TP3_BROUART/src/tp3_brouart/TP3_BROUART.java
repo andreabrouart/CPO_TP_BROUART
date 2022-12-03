@@ -28,11 +28,12 @@ public class TP3_BROUART {
      tableau.add(Durandal);
      tableau.add(Chene);
      tableau.add(Charme);
-     
+     // tableau dynamique de 2 épees et 2 bâtons
      
      for (int i =0; i<tableau.size();i++){
        System.out.println(tableau.elementAt(i));
      }
+     //afficher les éléments du tableau, càd afficher les caractéristiques des armes
      
      Magicien Gandalf = new Magicien("Gandalf",65,true);
      Magicien Garcimore = new Magicien("Garcimore",44,false);
@@ -44,10 +45,12 @@ public class TP3_BROUART {
      tableau2.add(Garcimore);
      tableau2.add(Conan);
      tableau2.add(Lannister);  
+     //tableau dynamique avec 4 personnages
      
      for (int i =0; i<tableau2.size();i++){
        System.out.println(tableau2.elementAt(i));
      }
+     //afficher les éléments du tableau, càd afficher les caractéristiques des personnes
      
      Magicien Copperfield = new Magicien("Copperfield",62, true);
      Guerrier Attila = new Guerrier("Attila",75,true);
@@ -61,13 +64,16 @@ public class TP3_BROUART {
      Attila.ajouter_arme(Curtana);
      Attila.ajouter_arme(Balisarde);
      Attila.ajouter_arme(Olivier);
+     //ajoute au stock d'armes d'Attila
      Attila.choisir_arme(Curtana);
+     //tiens une arme en main
      Copperfield.ajouter_arme(Bouleau);
      Copperfield.ajouter_arme(If);
      Copperfield.ajouter_arme(Baptism);
-    //System.out.println("Le nbr d'armes préférées de "+Copperfield.getNom()+" sont : "+Copperfield.);
+     //ajoute au stock d'armes de Copperfield
      System.out.println(Copperfield.toString());
      System.out.println(Attila.toString());
+     //Affiche les caractéristiques des deux personnages
      }
      
     }
